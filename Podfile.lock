@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - XFTableAgent (0.0.1)
+
+DEPENDENCIES:
+  - Masonry (~> 1.1.0)
+  - XFTableAgent (from `./`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  XFTableAgent:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  XFTableAgent: 9c3a1e1323e92637de6e94fc416ed15f973b6204
+
+PODFILE CHECKSUM: c383277e00a50f73ff1752c17d41c253380cb48c
+
+COCOAPODS: 1.8.3
