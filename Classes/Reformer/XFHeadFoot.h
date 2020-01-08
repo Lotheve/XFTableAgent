@@ -16,8 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface XFHeadFoot : NSObject
 
+/// 类名
 @property (nonatomic, strong) NSString *className;
 
+/// nib名（优先级nibName>className）
 @property (nonatomic, strong) NSString *nibName;
 
 /// 重用ID

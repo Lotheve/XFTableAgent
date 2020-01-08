@@ -19,10 +19,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface XFTablePanel : NSObject <XFTablePanelInterface>
 
+/// table view
 @property (nonatomic, strong) UITableView *tableView;
 
+/// 事件处理器
 @property (nonatomic, strong) XFTableEventHandler *eventHandler;
 
+/// 重新渲染
+/// @param info 表格信息
 - (void)reloadWithInfo:(XFTableInfo *)info;
 
 @end

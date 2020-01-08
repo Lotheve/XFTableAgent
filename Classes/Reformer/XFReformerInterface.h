@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol XFReformerInterface <NSObject>
 
-/// 数据格式转换 原始数据->TableInfo
+/// 表格信息构建接口
 /// @param data 原始数据
-- (XFTableInfo *)reformRawData:(id)data;
+- (XFTableInfo *)reformRawData:(nullable id)data;
 
 @end
 

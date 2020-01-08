@@ -39,7 +39,7 @@
 {
     [self.view addSubview:self.tableMain];
     self.tableAgent = [[XFTableAgent alloc] init];
-    [self.tableAgent agentTableView:self.tableMain rawData:self.rawData reformerClass:[BusinessReformer class] eventDelegate:self];
+    [self.tableAgent agentTableView:self.tableMain rawData:self.rawData reformerClass:[BusinessReformer class] panelClass:nil eventDelegate:self];
 }
 
 - (void)loadData

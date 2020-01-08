@@ -21,11 +21,6 @@
 
 @implementation XFTableDataSource
 
-- (instancetype)initWithReformer:(id<XFReformerInterface>)reformer delegate:(id<XFTableDataSourceDelegate>)delegate
-{
-    return [self initWithRawData:nil reformer:reformer delegate:delegate];
-}
-
 - (instancetype)initWithRawData:(nullable id)data reformer:(id<XFReformerInterface>)reformer delegate:(id<XFTableDataSourceDelegate>)delegate
 {
     NSCParameterAssert(reformer);

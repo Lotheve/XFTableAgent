@@ -23,20 +23,14 @@
 - (void)agentTableView:(UITableView *)tableView
                rawData:(nullable id)rawData
          reformerClass:(Class<XFReformerInterface>)reformerClass
-         eventDelegate:(id<XFTableEventDelegate>)eventDelegate
-{
-    [self agentTableView:tableView rawData:rawData reformerClass:reformerClass panelClass:[XFTablePanel class] eventDelegate:eventDelegate];
-}
-
-- (void)agentTableView:(UITableView *)tableView
-               rawData:(nullable id)rawData
-         reformerClass:(Class<XFReformerInterface>)reformerClass
-            panelClass:(Class<XFTablePanelInterface>)panelClass
+            panelClass:(nullable Class<XFTablePanelInterface>)panelClass
          eventDelegate:(id<XFTableEventDelegate>)eventDelegate
 {
     NSCParameterAssert(tableView);
     NSCParameterAssert(reformerClass);
-    NSCParameterAssert(panelClass);
+    if (!panelClass) {
+        panelClass = [XFTablePanel class];
+    }
     self.panel = [[(Class)panelClass alloc] init];
     self.panel.tableView = tableView;
     tableView.delegate = self.panel;

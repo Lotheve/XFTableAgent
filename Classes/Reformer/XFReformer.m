@@ -10,7 +10,7 @@
 
 @implementation XFReformer
 
-- (XFTableInfo *)reformRawData:(id)Data
+- (XFTableInfo *)reformRawData:(nullable id)data;
 {
     return nil;
 };

@@ -25,12 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface XFTableEventHandler : NSObject
 
+/// 事件代理对象
 @property (nonatomic, weak) id<XFTableEventDelegate> delegate;
 
+/// 处理Table事件
 - (void)postTableEvent:(XFTableEvent *)event;
 
+/// 处理Section事件
 - (void)postSectionEvent:(XFTableSectionEvent *)event;
 
+/// 处理Cell事件
 - (void)postCellEvent:(XFTableCellEvent *)event;
 
 @end
